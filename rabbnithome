@@ -1,0 +1,269 @@
+/rabbit-care/
+├─ index.html
+└─ style.css
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>訪問介護ラビット｜大切な人にできること</title>
+ <meta name="description" content="訪問介護ラビットは、ご本人とご家族の気持ちに寄り添う訪問介護サービスです。">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+ <div class="container header-inner">
+   <div class="logo">訪問介護ラビット</div>
+   <nav class="nav">
+     <a href="#about">私たちについて</a>
+     <a href="#service">サービス</a>
+     <a href="#contact">お問い合わせ</a>
+   </nav>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="container hero-inner">
+   <div class="hero-text">
+     <h1>訪問介護ラビット</h1>
+     <h2>大切な人にできること</h2>
+     <p>
+       住み慣れたご自宅で、<br>
+       安心して過ごせる毎日を支えます。
+     </p>
+     <div class="buttons">
+       <a href="tel:0000000000" class="btn primary">お電話で相談する</a>
+       <a href="#contact" class="btn secondary">お問い合わせ</a>
+     </div>
+   </div>
+   <div class="hero-image">
+     <!-- ロゴイラスト画像を入れる -->
+     <img src="logo.png" alt="訪問介護ラビット ロゴ">
+   </div>
+ </div>
+</section>
+
+<section id="about" class="section">
+ <div class="container">
+   <h3>私たちについて</h3>
+   <p>
+     訪問介護ラビットは、<br>
+     ご本人だけでなく、ご家族の気持ちにも寄り添う<br>
+     訪問介護を大切にしています。
+   </p>
+   <p>
+     「こんなことを頼んでいいのかな」<br>
+     そんな不安も、どうぞ安心してご相談ください。
+   </p>
+ </div>
+</section>
+
+<section id="service" class="section bg-light">
+ <div class="container">
+   <h3>サービス内容</h3>
+   <div class="service-list">
+     <div class="service-item">
+       <h4>身体介護</h4>
+       <p>食事・入浴・排せつなど<br>日常生活のサポート</p>
+     </div>
+     <div class="service-item">
+       <h4>生活援助</h4>
+       <p>掃除・洗濯・調理<br>買い物代行など</p>
+     </div>
+     <div class="service-item">
+       <h4>その他の支援</h4>
+       <p>通院の付き添い<br>見守り・ご相談</p>
+     </div>
+   </div>
+ </div>
+</section>
+
+<section class="section bg-green">
+ <div class="container">
+   <h3>訪問介護ラビットが選ばれる理由</h3>
+   <ul class="reasons">
+     <li>地域に根ざした訪問介護</li>
+     <li>一人ひとりに合わせた対応</li>
+     <li>やさしく丁寧なスタッフ</li>
+     <li>小さなご相談も大歓迎</li>
+   </ul>
+ </div>
+</section>
+
+<section id="contact" class="section bg-pink">
+ <div class="container">
+   <h3>まずはお気軽にご相談ください</h3>
+   <p>
+     介護のこと、ご家族のこと、<br>
+     分からないことは何でもお話しください。
+   </p>
+   <p class="contact-info">
+     📞 000-0000-0000<br>
+     ⏰ 9:00〜18:00
+   </p>
+ </div>
+</section>
+
+<footer class="footer">
+ <p>© 訪問介護ラビット</p>
+</footer>
+
+</body>
+</html>
+
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: "Hiragino Maru Gothic Pro", "Yu Gothic", sans-serif;
+ color: #444;
+ line-height: 1.8;
+ background: #fff;
+}
+
+.container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 40px 20px;
+}
+
+.header {
+ background: #fff;
+ border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo {
+ font-size: 20px;
+ font-weight: bold;
+}
+
+.nav a {
+ margin-left: 20px;
+ text-decoration: none;
+ color: #666;
+}
+
+.hero {
+ background: #fff5f7;
+}
+
+.hero-inner {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.hero-text {
+ flex: 1;
+ min-width: 280px;
+}
+
+.hero-text h1 {
+ font-size: 32px;
+}
+
+.hero-text h2 {
+ font-size: 20px;
+ margin-bottom: 15px;
+ color: #d86a86;
+}
+
+.hero-image {
+ flex: 1;
+ text-align: center;
+}
+
+.hero-image img {
+ max-width: 280px;
+}
+
+.buttons {
+ margin-top: 20px;
+}
+
+.btn {
+ display: inline-block;
+ padding: 12px 24px;
+ border-radius: 30px;
+ text-decoration: none;
+ margin-right: 10px;
+}
+
+.primary {
+ background: #f2a1b3;
+ color: #fff;
+}
+
+.secondary {
+ border: 2px solid #f2a1b3;
+ color: #f2a1b3;
+}
+
+.section h3 {
+ font-size: 24px;
+ margin-bottom: 20px;
+}
+
+.bg-light {
+ background: #fafafa;
+}
+
+.bg-green {
+ background: #eaf6f0;
+}
+
+.bg-pink {
+ background: #fff0f4;
+}
+
+.service-list {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+}
+
+.service-item {
+ background: #fff;
+ border-radius: 20px;
+ padding: 20px;
+ flex: 1;
+ min-width: 240px;
+}
+
+.reasons {
+ list-style: none;
+}
+
+.footer {
+ text-align: center;
+ padding: 20px;
+ background: #fafafa;
+ font-size: 14px;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+ .hero-inner {
+   flex-direction: column;
+   text-align: center;
+ }
+
+ .nav {
+   display: none;
+ }
+}
+
+
